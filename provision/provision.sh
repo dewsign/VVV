@@ -267,13 +267,17 @@ if [[ $ping_result == "Connected" ]]; then
 		npm update --global lazypipe &>/dev/null
 		npm update --global gulp-less &>/dev/null
 		npm update --global merge-stream &>/dev/null
-		npm update --global minify-css &>/dev/null
+		npm update --global gulp-minify-css &>/dev/null
 		npm update --global gulp-plumber &>/dev/null
 		npm update --global gulp-rev &>/dev/null
 		npm update --global run-sequence &>/dev/null
 		npm update --global gulp-sass &>/dev/null
 		npm update --global gulp-sourcemaps &>/dev/null
 		npm update --global gulp-uglify &>/dev/null
+		npm update --global asset-builder &>/dev/null
+		npm update --global del &>/dev/null
+		npm update --global wiredep &>/dev/null
+		npm update --global bower &>/dev/null
 	else
 		echo "Installing Gulp"
 		npm install --global gulp &>/dev/null
@@ -290,13 +294,17 @@ if [[ $ping_result == "Connected" ]]; then
 		npm install --global lazypipe &>/dev/null
 		npm install --global gulp-less &>/dev/null
 		npm install --global merge-stream &>/dev/null
-		npm install --global minify-css &>/dev/null
+		npm install --global gulp-minify-css &>/dev/null
 		npm install --global gulp-plumber &>/dev/null
 		npm install --global gulp-rev &>/dev/null
 		npm install --global run-sequence &>/dev/null
 		npm install --global gulp-sass &>/dev/null
 		npm install --global gulp-sourcemaps &>/dev/null
 		npm install --global gulp-uglify &>/dev/null
+		npm install --global asset-builder &>/dev/null
+		npm install --global del &>/dev/null
+		npm install --global wiredep &>/dev/null
+		npm install --global bower &>/dev/null
 	fi
 
 	# Graphviz

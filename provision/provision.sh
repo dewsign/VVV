@@ -246,6 +246,58 @@ if [[ $ping_result == "Connected" ]]; then
 		npm install -g grunt-cssjanus &>/dev/null
 		npm install -g grunt-rtlcss &>/dev/null
 	fi
+	
+	# Gulp
+	#
+	# Install or Update Gulp based on current state.  Updates are direct
+	# from NPM
+	if [[ "$(gulp --version)" ]]; then
+		echo "Updating Gulp"
+		npm update --global gulp &>/dev/null
+		npm update --global minimist &>/dev/null
+		npm update --global gulp-autoprefixer &>/dev/null
+		npm update --global browser-sync &>/dev/null
+		npm update --global gulp-changed &>/dev/null
+		npm update --global gulp-concat &>/dev/null
+		npm update --global gulp-flatten &>/dev/null
+		npm update --global gulp &>/dev/null
+		npm update --global gulp-if &>/dev/null
+		npm update --global gulp-imagemin &>/dev/null
+		npm update --global gulp-jshint &>/dev/null
+		npm update --global lazypipe &>/dev/null
+		npm update --global gulp-less &>/dev/null
+		npm update --global merge-stream &>/dev/null
+		npm update --global minify-css &>/dev/null
+		npm update --global gulp-plumber &>/dev/null
+		npm update --global gulp-rev &>/dev/null
+		npm update --global run-sequence &>/dev/null
+		npm update --global gulp-sass &>/dev/null
+		npm update --global gulp-sourcemaps &>/dev/null
+		npm update --global gulp-uglify &>/dev/null
+	else
+		echo "Installing Gulp"
+		npm install --global gulp &>/dev/null
+		npm install --global minimist &>/dev/null
+		npm install --global gulp-autoprefixer &>/dev/null
+		npm install --global browser-sync &>/dev/null
+		npm install --global gulp-changed &>/dev/null
+		npm install --global gulp-concat &>/dev/null
+		npm install --global gulp-flatten &>/dev/null
+		npm install --global gulp &>/dev/null
+		npm install --global gulp-if &>/dev/null
+		npm install --global gulp-imagemin &>/dev/null
+		npm install --global gulp-jshint &>/dev/null
+		npm install --global lazypipe &>/dev/null
+		npm install --global gulp-less &>/dev/null
+		npm install --global merge-stream &>/dev/null
+		npm install --global minify-css &>/dev/null
+		npm install --global gulp-plumber &>/dev/null
+		npm install --global gulp-rev &>/dev/null
+		npm install --global run-sequence &>/dev/null
+		npm install --global gulp-sass &>/dev/null
+		npm install --global gulp-sourcemaps &>/dev/null
+		npm install --global gulp-uglify &>/dev/null
+	fi
 
 	# Graphviz
 	#
